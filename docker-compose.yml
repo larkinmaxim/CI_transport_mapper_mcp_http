@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  xml-transformer-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xml-transformer-mcp
+    ports:
+      - "3100:3100"
+    environment:
+      - NODE_ENV=production
+      - MCP_TRANSPORT=http
+      - PORT=3100
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3100/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.xml-transformer.rule=Host(`xml-transformer.localhost`)"
+      - "traefik.http.services.xml-transformer.loadbalancer.server.port=3100"
