@@ -1,0 +1,652 @@
+<tour id="895851881">
+    <number>895851881</number>
+    <status>C</status>
+    <plant>DE Koerdel</plant>
+    <scheduling_unit_id>23022</scheduling_unit_id>
+    <comment/>
+    <plain_comment/>
+    <vehicle_name/>
+    <weight>28627.20</weight>
+    <weight_unit>kg</weight_unit>
+    <length>0.00</length>
+    <length_unit>m</length_unit>
+    <volume>34080.00</volume>
+    <volume_unit>l</volume_unit>
+    <route>0.00</route>
+    <route_unit>km</route_unit>
+    <dimension_loadingmeter>0.00</dimension_loadingmeter>
+    <stops/>
+    <frozen>0</frozen>
+    <decline_reason_comment/>
+    <accept_offer_reason/>
+    <accept_offer_comment/>
+    <price_basic>0.00</price_basic>
+    <currency_id>EUR</currency_id>
+    <is_tiflow>1</is_tiflow>
+    <transport_remarks/>
+    <location_id>0</location_id>
+    <gate_id>0</gate_id>
+    <necessary_slots>0</necessary_slots>
+    <processed_by_quotation>0</processed_by_quotation>
+    <auction_comment/>
+    <customer_head_comment/>
+    <shipment id="556898153">
+        <index>0</index>
+        <number>611441-2216281</number>
+        <type>A</type>
+        <last_modified>2025-10-17 14:21:29</last_modified>
+        <company_id>454692</company_id>
+        <creator_id>9742529</creator_id>
+        <transport_id>895851881</transport_id>
+        <plant>DE Koerdel</plant>
+        <dlclass/>
+        <dlnumber/>
+        <faktura/>
+        <incoterm_city/>
+        <vehicle_id>vehicleTanker</vehicle_id>
+        <vehicle_name/>
+        <weight>28627.20</weight>
+        <weight_unit>kg</weight_unit>
+        <volume>34080.00</volume>
+        <volume_unit>l</volume_unit>
+        <length>0.00</length>
+        <length_unit>m</length_unit>
+        <route>0.00</route>
+        <route_unit>km</route_unit>
+        <dimension_loadingmeter>0.00</dimension_loadingmeter>
+        <storageposition_count>0.00</storageposition_count>
+        <comment/>
+        <plain_comment/>
+        <station type="loading">
+            <type>1</type>
+            <index>0</index>
+            <loading_nr>D003</loading_nr>
+            <company_name>Shell Int. Trading</company_name>
+            <address>Liebigstraße 93</address>
+            <zip>65439</zip>
+            <city>Flörsheim</city>
+            <country_id>DE</country_id>
+            <latitude>50.003263</latitude>
+            <longitude>8.410209</longitude>
+            <gis_provider>PTV</gis_provider>
+            <from_date>2025-10-20</from_date>
+            <from_time>03:33</from_time>
+            <until_date>2025-10-20</until_date>
+            <until_time>03:43</until_time>
+            <timezone>Europe/Berlin</timezone>
+            <transportunit_name/>
+            <transportunit_count>0</transportunit_count>
+            <transportunit_pileable>0</transportunit_pileable>
+            <transportunit_exchange>0</transportunit_exchange>
+            <comment/>
+            <plain_comment/>
+            <internal_id>-1392899801</internal_id>
+            <place_reference_id>D003</place_reference_id>
+        </station>
+        <station type="unloading">
+            <type>2</type>
+            <index>0</index>
+            <loading_nr>10024994</loading_nr>
+            <company_name>Shell TS RODGAU A3 Nord</company_name>
+            <address>A3 WEISKIRCHEN NORD</address>
+            <zip>63512</zip>
+            <city>RODGAU</city>
+            <country_id>DE</country_id>
+            <latitude>50.071764</latitude>
+            <longitude>8.947492</longitude>
+            <gis_provider>PTV</gis_provider>
+            <from_date>2025-10-20</from_date>
+            <from_time>03:43</from_time>
+            <until_date>2025-10-20</until_date>
+            <until_time>04:03</until_time>
+            <timezone>Europe/Berlin</timezone>
+            <transportunit_name/>
+            <transportunit_count>0</transportunit_count>
+            <transportunit_pileable>0</transportunit_pileable>
+            <transportunit_exchange>0</transportunit_exchange>
+            <comment/>
+            <plain_comment/>
+            <internal_id>909651932</internal_id>
+            <place_reference_id>10024994</place_reference_id>
+        </station>
+        <items>
+            <item id="5ce74ca4-a761-8551-dfb4-cabe23fc8a50" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes">
+                <pos_number>6766213</pos_number>
+                <pos_index>6766213</pos_index>
+                <description>Super E10 S</description>
+                <short_description>E10</short_description>
+                <material_number>400001633</material_number>
+                <quantities>
+                    <quantity>
+                        <qualifier>dimension.volume</qualifier>
+                        <value>6500.0</value>
+                        <unit>l</unit>
+                    </quantity>
+                </quantities>
+                <parameters>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>bol</qualifier>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>tank.number</qualifier>
+                        <value>
+                            <![CDATA[8]]>
+                        </value>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>compartment.number</qualifier>
+                    </parameter>
+                </parameters>
+            </item>
+            <item id="6836975e-8dbc-9c84-1c80-1e6443660716" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes">
+                <pos_number>6766217</pos_number>
+                <pos_index>6766217</pos_index>
+                <description>FSDK</description>
+                <short_description>FSDK</short_description>
+                <material_number>400002130</material_number>
+                <quantities>
+                    <quantity>
+                        <qualifier>dimension.volume</qualifier>
+                        <value>4080.0</value>
+                        <unit>l</unit>
+                    </quantity>
+                </quantities>
+                <parameters>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>bol</qualifier>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>tank.number</qualifier>
+                        <value>
+                            <![CDATA[4]]>
+                        </value>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>compartment.number</qualifier>
+                    </parameter>
+                </parameters>
+            </item>
+            <item id="5752dafa-16d0-2a5b-1f3a-9a9173476e72" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes">
+                <pos_number>6766216</pos_number>
+                <pos_index>6766216</pos_index>
+                <description>FSDK</description>
+                <short_description>FSDK</short_description>
+                <material_number>400002130</material_number>
+                <quantities>
+                    <quantity>
+                        <qualifier>dimension.volume</qualifier>
+                        <value>5000.0</value>
+                        <unit>l</unit>
+                    </quantity>
+                </quantities>
+                <parameters>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>bol</qualifier>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>tank.number</qualifier>
+                        <value>
+                            <![CDATA[2]]>
+                        </value>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>compartment.number</qualifier>
+                    </parameter>
+                </parameters>
+            </item>
+            <item id="92f3c367-c0b5-929d-ad41-310d6480acbe" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes">
+                <pos_number>6766215</pos_number>
+                <pos_index>6766215</pos_index>
+                <description>FSDK</description>
+                <short_description>FSDK</short_description>
+                <material_number>400002130</material_number>
+                <quantities>
+                    <quantity>
+                        <qualifier>dimension.volume</qualifier>
+                        <value>5000.0</value>
+                        <unit>l</unit>
+                    </quantity>
+                </quantities>
+                <parameters>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>bol</qualifier>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>tank.number</qualifier>
+                        <value>
+                            <![CDATA[1]]>
+                        </value>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>compartment.number</qualifier>
+                    </parameter>
+                </parameters>
+            </item>
+            <item id="1c9e2e9c-fabf-519d-a3a1-198a2d93dbb2" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes">
+                <pos_number>6766219</pos_number>
+                <pos_index>6766219</pos_index>
+                <description>STDK</description>
+                <short_description>STDK</short_description>
+                <material_number>400001682</material_number>
+                <quantities>
+                    <quantity>
+                        <qualifier>dimension.volume</qualifier>
+                        <value>13500.0</value>
+                        <unit>l</unit>
+                    </quantity>
+                </quantities>
+                <parameters>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>bol</qualifier>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>tank.number</qualifier>
+                        <value>
+                            <![CDATA[6]]>
+                        </value>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>compartment.number</qualifier>
+                    </parameter>
+                </parameters>
+            </item>
+        </items>
+        <parameters>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>basePrice</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>basePriceVisibleToCarrier</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>currency</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityAmount</qualifier>
+                <value>
+                    <![CDATA[34080.00]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityUnit</qualifier>
+                <value>
+                    <![CDATA[l]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>rate_unit_price</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>is_delivered</qualifier>
+                <value>
+                    <![CDATA[false]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>fuel_type_delivery</qualifier>
+                <value>
+                    <![CDATA[Diesel]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>custom.identifiers.delivery</qualifier>
+                <value>
+                    <![CDATA[D003]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>custom.identifiers.delivery.2</qualifier>
+                <value>
+                    <![CDATA[10024994]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>custom.identifiers.delivery.3</qualifier>
+            </parameter>
+            <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>order_type</qualifier>
+            </parameter>
+            <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>gsap_status</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>cooled</qualifier>
+                <value>
+                    <![CDATA[false]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>delivery.mode.main</qualifier>
+                <value>
+                    <![CDATA[Road]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>fsb_exported</qualifier>
+            </parameter>
+            <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>gsap_order_number</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>confirmation_error_message</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityAmountBlackOil</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityAmountWhiteOil</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityAmountJetFuel</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityAmountAdditive</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>rate_unit_price_WhiteOil</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>rate_unit_price_BlackOil</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>rate_unit_price_JetFuel</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>rate_unit_price_Additive</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>delivery_confirmation_message</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>manually_confirmed_by</qualifier>
+                <value>
+                    <![CDATA[-]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>manually_confirmed</qualifier>
+                <value>
+                    <![CDATA[false]]>
+                </value>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+                <qualifier>is_discharged</qualifier>
+                <value>
+                    <![CDATA[false]]>
+                </value>
+            </parameter>
+        </parameters>
+        <hide_number_unbooked>0</hide_number_unbooked>
+        <deliveryVersion>5</deliveryVersion>
+        <are_items_frozen>0</are_items_frozen>
+        <scheduling_unit_id>23022</scheduling_unit_id>
+        <cmrRecipientIsNotDestination>false</cmrRecipientIsNotDestination>
+        <cmrRecipientAddress/>
+        <onBehalfOf>611441</onBehalfOf>
+        <confirmationStatus>UNCONFIRMED</confirmationStatus>
+    </shipment>
+    <start_country_id>DE</start_country_id>
+    <start_zip>65439</start_zip>
+    <start_city>Flörsheim</start_city>
+    <end_country_id>DE</end_country_id>
+    <end_zip>63512</end_zip>
+    <end_city>RODGAU</end_city>
+    <start_date>2025-10-20</start_date>
+    <start_time>03:33</start_time>
+    <transportVersion>7</transportVersion>
+    <alphanumeric_number>611441-812203</alphanumeric_number>
+    <datetime>2025-10-17 14:21:29</datetime>
+    <created_timestamp>2025-10-17 14:20:50</created_timestamp>
+    <datetime_published>2000-01-01 00:00:00</datetime_published>
+    <datetime_routed>2025-10-17 14:20:52</datetime_routed>
+    <datetime_acknowledged>2025-10-17 14:20:52</datetime_acknowledged>
+    <datetime_assigned>2000-01-01 00:00:00</datetime_assigned>
+    <editable>1</editable>
+    <type>A</type>
+    <creator_id>9742529</creator_id>
+    <disponent_id>9673642</disponent_id>
+    <company_id>454692</company_id>
+    <company_name>Shell Information Technology International B.V.</company_name>
+    <assigned_carrier_id>611441</assigned_carrier_id>
+    <assigned_creditor_number>69006946</assigned_creditor_number>
+    <carrier_group_id>0</carrier_group_id>
+    <vehicle_id>vehicleTanker</vehicle_id>
+    <end_date>2025-10-20</end_date>
+    <end_time>04:03</end_time>
+    <auction_start_date>2025-10-17</auction_start_date>
+    <auction_start_time>14:20</auction_start_time>
+    <auction_end_date>2025-10-17</auction_end_date>
+    <auction_end_time>16:20</auction_end_time>
+    <parameters>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>licenceplate</qualifier>
+            <value>
+                <![CDATA[9481/S-738]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>licenceplatetrailer</qualifier>
+            <value>
+                <![CDATA[9481/SH-738]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>truck_id</qualifier>
+            <value>
+                <![CDATA[9481]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>fuel_type</qualifier>
+            <value>
+                <![CDATA[Diesel]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>exported_to_GSAP</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>is_tariff_executed</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>custom.identifiers.tour</qualifier>
+            <value>
+                <![CDATA[9481]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>custom.identifiers.tour.2</qualifier>
+            <value>
+                <![CDATA[D003]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>custom.identifiers.tour.3</qualifier>
+            <value>
+                <![CDATA[10024994]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>rm_processing_message</qualifier>
+            <value>
+                <![CDATA[No price is provided for not discharged transport]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>is_replacement</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>loadtype</qualifier>
+            <value>
+                <![CDATA[FTL]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>mode.main</qualifier>
+            <value>
+                <![CDATA[Road]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>vehicle.type.road</qualifier>
+            <value>
+                <![CDATA[Class40]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>fueltype.road</qualifier>
+            <value>
+                <![CDATA[DSL]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>empty_trip_factor</qualifier>
+            <value>
+                <![CDATA[20]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>load_factor</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>emission_class</qualifier>
+            <value>
+                <![CDATA[EuEuro6]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>interface.process</qualifier>
+            <value>
+                <![CDATA[post-event]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>purchase_order_number</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>fsb_exported_tr</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>is_discharged</qualifier>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>is_redirected</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>licence_plate_second_trailer</qualifier>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>gsap_shipment_number</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>truck_classification_group</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>is_exception</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>driver_id</qualifier>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>driver_name</qualifier>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>driver_surname</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>mobile.order.management.package1</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>mobile.order.management.package2</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>mobile.order.management.package3</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>noExportToCarrier</qualifier>
+            <value>
+                <![CDATA[true]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>visibility.product</qualifier>
+            <value>
+                <![CDATA[rtv]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>rtv.workflow</qualifier>
+        </parameter>
+        <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="no" visibilitySupplier="no">
+            <qualifier>is_discharged_tr</qualifier>
+            <value>
+                <![CDATA[false]]>
+            </value>
+        </parameter>
+    </parameters>
+    <hide_ba>0</hide_ba>
+    <disable_ba>0</disable_ba>
+    <disable_ba_on_no_ba>0</disable_ba_on_no_ba>
+    <disable_offer_price>0</disable_offer_price>
+    <carrier_ba_overrides_ba>0</carrier_ba_overrides_ba>
+    <force_ba>0</force_ba>
+    <prices/>
+    <assigned_offer_id>0</assigned_offer_id>
+    <carrier_disponent_id>0</carrier_disponent_id>
+    <attachmentsNo>0</attachmentsNo>
+    <emission_info>
+        <co2e_tank_wheel>89.95362371206284</co2e_tank_wheel>
+        <co2e_well_tank>29.63663451373577</co2e_well_tank>
+        <co2e_well_wheel>119.59025263786316</co2e_well_wheel>
+    </emission_info>
+    <required_price_components/>
+    <datetime_carrier_relevant>2025-10-17 14:21:29</datetime_carrier_relevant>
+    <read_vehicle_from_delivery>0</read_vehicle_from_delivery>
+    <calculate_distance_from_deliveries>1</calculate_distance_from_deliveries>
+    <calculate_weight_from_deliveries>1</calculate_weight_from_deliveries>
+    <acknowledgement_required>0</acknowledgement_required>
+    <is_acknowledged>1</is_acknowledged>
+    <decline_reason_qualifier/>
+    <price_min>0.00</price_min>
+    <price_max>0.00</price_max>
+    <price_additional1>0.00</price_additional1>
+    <price_additional2>0.00</price_additional2>
+    <price_additional3>0.00</price_additional3>
+    <price_additional1_desc/>
+    <price_additional2_desc/>
+    <price_additional3_desc/>
+    <storageposition_count>0.00</storageposition_count>
+    <storageposition_count_unit>none</storageposition_count_unit>
+    <hide_number_unbooked>0</hide_number_unbooked>
+    <plain_auction_comment/>
+    <plain_internal_comment/>
+    <loading_datetime_offer_requested>0</loading_datetime_offer_requested>
+    <unloading_datetime_offer_requested>0</unloading_datetime_offer_requested>
+    <onBehalfOf>611441</onBehalfOf>
+    <contacts/>
+    <lock_transport_modification_for_onBehalfOf>0</lock_transport_modification_for_onBehalfOf>
+</tour>

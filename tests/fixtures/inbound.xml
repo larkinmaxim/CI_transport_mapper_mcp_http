@@ -1,0 +1,210 @@
+<tour id="895851881">
+    <number>895851881</number>
+    <status>C</status>
+    <plant>DE Koerdel</plant>
+    <scheduling_unit_id>23022</scheduling_unit_id>
+    <comment/>
+    <plain_comment/>
+    <vehicle_name/>
+    <weight>28627.20</weight>
+    <weight_unit>kg</weight_unit>
+    <length>0.00</length>
+    <length_unit>m</length_unit>
+    <volume>34080.00</volume>
+    <volume_unit>l</volume_unit>
+    <route>0.00</route>
+    <route_unit>km</route_unit>
+    <dimension_loadingmeter>0.00</dimension_loadingmeter>
+    <stops/>
+    <frozen>0</frozen>
+    <decline_reason_comment/>
+    <accept_offer_reason/>
+    <accept_offer_comment/>
+    <price_basic>0.00</price_basic>
+    <currency_id>EUR</currency_id>
+    <is_tiflow>1</is_tiflow>
+    <transport_remarks/>
+    <location_id>0</location_id>
+    <gate_id>0</gate_id>
+    <necessary_slots>0</necessary_slots>
+    <processed_by_quotation>0</processed_by_quotation>
+    <auction_comment/>
+    <customer_head_comment/>
+    <shipment id="556898153">
+        <index>0</index>
+        <number>611441-2216281</number>
+        <type>A</type>
+        <last_modified>2025-10-17 14:21:29</last_modified>
+        <company_id>454692</company_id>
+        <creator_id>9742529</creator_id>
+        <transport_id>895851881</transport_id>
+        <plant>DE Koerdel</plant>
+        <dlclass/>
+        <dlnumber/>
+        <faktura/>
+        <incoterm_city/>
+        <vehicle_id>vehicleTanker</vehicle_id>
+        <vehicle_name/>
+        <weight>28627.20</weight>
+        <weight_unit>kg</weight_unit>
+        <volume>34080.00</volume>
+        <volume_unit>l</volume_unit>
+        <length>0.00</length>
+        <length_unit>m</length_unit>
+        <route>0.00</route>
+        <route_unit>km</route_unit>
+        <dimension_loadingmeter>0.00</dimension_loadingmeter>
+        <storageposition_count>0.00</storageposition_count>
+        <comment/>
+        <plain_comment/>
+        <station type="loading">
+            <type>1</type>
+            <index>0</index>
+            <loading_nr>D003</loading_nr>
+            <company_name>Shell Int. Trading</company_name>
+            <address>Liebigstraße 93</address>
+            <zip>65439</zip>
+            <city>Flörsheim</city>
+            <country_id>DE</country_id>
+            <latitude>50.003263</latitude>
+            <longitude>8.410209</longitude>
+            <gis_provider>PTV</gis_provider>
+            <from_date>2025-10-20</from_date>
+            <from_time>03:33</from_time>
+            <until_date>2025-10-20</until_date>
+            <until_time>03:43</until_time>
+            <timezone>Europe/Berlin</timezone>
+            <transportunit_name/>
+            <transportunit_count>0</transportunit_count>
+            <transportunit_pileable>0</transportunit_pileable>
+            <transportunit_exchange>0</transportunit_exchange>
+            <comment/>
+            <plain_comment/>
+            <internal_id>-1392899801</internal_id>
+            <place_reference_id>D003</place_reference_id>
+        </station>
+        <station type="unloading">
+            <type>2</type>
+            <index>0</index>
+            <loading_nr>10024994</loading_nr>
+            <company_name>Shell TS RODGAU A3 Nord</company_name>
+            <address>A3 WEISKIRCHEN NORD</address>
+            <zip>63512</zip>
+            <city>RODGAU</city>
+            <country_id>DE</country_id>
+            <latitude>50.071764</latitude>
+            <longitude>8.947492</longitude>
+            <gis_provider>PTV</gis_provider>
+            <from_date>2025-10-20</from_date>
+            <from_time>03:43</from_time>
+            <until_date>2025-10-20</until_date>
+            <until_time>04:03</until_time>
+            <timezone>Europe/Berlin</timezone>
+            <transportunit_name/>
+            <transportunit_count>0</transportunit_count>
+            <transportunit_pileable>0</transportunit_pileable>
+            <transportunit_exchange>0</transportunit_exchange>
+            <comment/>
+            <plain_comment/>
+            <internal_id>909651932</internal_id>
+            <place_reference_id>10024994</place_reference_id>
+        </station>
+        <items>
+            <item id="5ce74ca4-a761-8551-dfb4-cabe23fc8a50" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes">
+                <pos_number>6766213</pos_number>
+                <pos_index>6766213</pos_index>
+                <description>Super E10 S</description>
+                <short_description>E10</short_description>
+                <material_number>400001633</material_number>
+                <quantities>
+                    <quantity>
+                        <qualifier>dimension.volume</qualifier>
+                        <value>6500.0</value>
+                        <unit>l</unit>
+                    </quantity>
+                </quantities>
+                <parameters>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>bol</qualifier>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>tank.number</qualifier>
+                        <value>
+                            <![CDATA[8]]>
+                        </value>
+                    </parameter>
+                    <parameter export2carrier="yes" visibilityCarrier="assigned" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                        <qualifier>compartment.number</qualifier>
+                    </parameter>
+                </parameters>
+            </item>
+        </items>
+        <parameters>
+            <parameter export2carrier="no" visibilityCarrier="no" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>basePrice</qualifier>
+            </parameter>
+            <parameter export2carrier="no" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+                <qualifier>quantityAmount</qualifier>
+                <value>
+                    <![CDATA[34080.00]]>
+                </value>
+            </parameter>
+        </parameters>
+        <hide_number_unbooked>0</hide_number_unbooked>
+        <deliveryVersion>5</deliveryVersion>
+        <are_items_frozen>0</are_items_frozen>
+        <scheduling_unit_id>23022</scheduling_unit_id>
+        <cmrRecipientIsNotDestination>false</cmrRecipientIsNotDestination>
+        <cmrRecipientAddress/>
+        <onBehalfOf>611441</onBehalfOf>
+        <confirmationStatus>UNCONFIRMED</confirmationStatus>
+    </shipment>
+    <start_country_id>DE</start_country_id>
+    <start_zip>65439</start_zip>
+    <start_city>Flörsheim</start_city>
+    <end_country_id>DE</end_country_id>
+    <end_zip>63512</end_zip>
+    <end_city>RODGAU</end_city>
+    <start_date>2025-10-20</start_date>
+    <start_time>03:33</start_time>
+    <transportVersion>7</transportVersion>
+    <alphanumeric_number>611441-812203</alphanumeric_number>
+    <datetime>2025-10-17 14:21:29</datetime>
+    <created_timestamp>2025-10-17 14:20:50</created_timestamp>
+    <datetime_published>2000-01-01 00:00:00</datetime_published>
+    <datetime_routed>2025-10-17 14:20:52</datetime_routed>
+    <company_id>454692</company_id>
+    <assigned_carrier_id>611441</assigned_carrier_id>
+    <vehicle_id>vehicleTanker</vehicle_id>
+    <end_date>2025-10-20</end_date>
+    <end_time>04:03</end_time>
+    <parameters>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>licenceplate</qualifier>
+            <value>
+                <![CDATA[9481/S-738]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>licenceplatetrailer</qualifier>
+            <value>
+                <![CDATA[9481/SH-738]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>truck_id</qualifier>
+            <value>
+                <![CDATA[9481]]>
+            </value>
+        </parameter>
+        <parameter export2carrier="yes" visibilityCarrier="always" visibilityMom="no" visibilityShipper="yes" visibilitySupplier="no">
+            <qualifier>fuel_type</qualifier>
+            <value>
+                <![CDATA[Diesel]]>
+            </value>
+        </parameter>
+    </parameters>
+</tour>
+
+
+
