@@ -54,7 +54,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request: any) => {
  * Start HTTP server with StreamableHTTPServerTransport
  */
 async function startHttpServer() {
-  const port = parseInt(process.env.PORT || '3300');
+  const port = parseInt(process.env.PORT || '3100');
   const app = express();
   app.use(express.json());
 
