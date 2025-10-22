@@ -52,6 +52,79 @@ npm run lint
 npm run clean
 ```
 
+## 🐳 Container Deployment
+
+### Podman Deployment (Recommended)
+
+Deploy the XML Transformer MCP Server as a container using Podman with the provided PowerShell script.
+
+#### Prerequisites
+- **Podman** - Container runtime ([Installation Guide](https://podman.io/getting-started/installation))
+- **PowerShell** 5.1+ (Windows PowerShell or PowerShell Core)
+
+#### Quick Deployment
+```powershell
+# Deploy with default settings (production, port 3100)
+.\deploy.ps1
+
+# Deploy with custom settings
+.\deploy.ps1 -Port 3101 -Environment dev
+```
+
+#### Container Details
+- **Image Name**: `ci-xml-transformer-mcp:latest`
+- **Container Name**: `ci-xml-transformer-mcp`
+- **Default Port**: 3100
+- **Health Checks**: Automatic monitoring every 30s
+- **Auto-restart**: Unless manually stopped
+
+#### Container Management
+```powershell
+# View real-time logs
+podman logs -f ci-xml-transformer-mcp
+
+# Stop the container
+podman stop ci-xml-transformer-mcp
+
+# Restart the container
+podman restart ci-xml-transformer-mcp
+
+# Check container status
+podman ps --filter name=ci-xml-transformer-mcp
+
+# Remove container (if needed)
+podman rm ci-xml-transformer-mcp
+```
+
+#### Container Features
+- ✅ **HTTP Transport**: Optimized for web clients and API access
+- ✅ **Health Monitoring**: Built-in health checks with automatic recovery
+- ✅ **Environment Isolation**: Runs in isolated container environment
+- ✅ **Port Mapping**: Configurable port mapping (default: 3100)
+- ✅ **Auto-restart**: Automatically restarts on failure
+- ✅ **Resource Labels**: Tagged for easy management and monitoring
+
+#### Access Deployed Server
+Once deployed, the server is accessible at:
+- **HTTP Endpoint**: http://localhost:3100
+- **Status Check**: `curl http://localhost:3100`
+- **MCP Endpoint**: http://localhost:3100/mcp
+
+### Docker Compose (Alternative)
+
+You can also use Docker Compose for deployment:
+
+```bash
+# Build and start with Docker Compose
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
 ## 📡 Usage Examples
 
 ### MCP Client (Stdio Transport)
@@ -85,7 +158,7 @@ const result = await client.request({
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 
 const transport = new StreamableHTTPClientTransport({
-  baseUrl: 'http://localhost:3000'
+  baseUrl: 'http://localhost:3100'
 });
 
 const client = new Client({}, { capabilities: {} });
@@ -100,8 +173,8 @@ await client.connect(transport);
 # Transport type (stdio or http)
 MCP_TRANSPORT=http
 
-# Port for HTTP transport (default: 3000)
-PORT=3000
+# Port for HTTP transport (default: 3100)
+PORT=3100
 ```
 
 ## 🔧 XML Transformation
@@ -182,7 +255,7 @@ PORT=3000
 ## 📁 Project Structure
 
 ```
-epm_KN/
+CI_transport_mapper_mcp_http/
 ├── src/
 │   ├── server.ts                 # Main MCP server entry point
 │   ├── tools/
@@ -202,10 +275,16 @@ epm_KN/
 │   └── fixtures/                 # Test XML files
 ├── Examples/
 │   ├── inbound.xml               # Sample input
-│   └── outbound.xml              # Sample output
-└── Documentation/
-    ├── MCP_Server_Implementation_Plan.md    # Detailed implementation guide
-    └── XML_Path_Comparison_Table.md         # Mapping rules reference
+│   ├── outbound.xml              # Sample output
+│   └── respond.xml               # Sample response
+├── Documentation/
+│   ├── MCP_Server_Implementation_Plan.md    # Detailed implementation guide
+│   ├── XML_Data_Comparison.md               # Data mapping comparison
+│   └── XML_Path_Comparison_Table.md         # Mapping rules reference
+├── deploy.ps1                   # Podman deployment script
+├── docker-compose.yml           # Docker Compose configuration
+├── Dockerfile                   # Container build configuration
+└── README.md                    # This file
 ```
 
 ## 🧪 Testing
@@ -261,7 +340,9 @@ MIT License - see LICENSE file for details.
 
 ## 🔗 Related Documentation
 
+- [Container Deployment Guide](Documentation/Container_Deployment_Guide.md) - Comprehensive container deployment instructions
 - [MCP Server Implementation Plan](Documentation/MCP_Server_Implementation_Plan.md) - Complete technical specification
+- [XML Data Comparison](Documentation/XML_Data_Comparison.md) - Data mapping analysis  
 - [XML Path Comparison Table](Documentation/XML_Path_Comparison_Table.md) - Detailed mapping rules
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Official MCP documentation
 
