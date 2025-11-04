@@ -89,7 +89,7 @@ if ($status) {
         
         foreach ($file in $jsonFiles) {
             $content = Get-Content $file.FullName -Raw | ConvertFrom-Json
-            if ($content.name -eq $ContainerName -or $content.containerName -eq $ContainerName) {
+            if ($content.name -eq $ContainerName -or $content.containerName -eq $ContainerName -or $content.mcpId -eq $ContainerName) {
                 $targetFile = $file
                 break
             }
