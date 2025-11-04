@@ -34,8 +34,8 @@ The XML Transformer MCP Server can be deployed as a container using either Podma
 ```
 
 This will:
-- Build the container image as `ci-xml-transformer-mcp:latest`
-- Create and start container `ci-xml-transformer-mcp`
+- Build the container image as `ci-transport-mapper-mcp-http:latest`
+- Create and start container `ci-transport-mapper-mcp-http`
 - Expose the service on port 3100
 - Configure automatic restart and health monitoring
 
@@ -48,13 +48,13 @@ This will:
 #### 3. Verify Deployment
 ```powershell
 # Check container status
-podman ps --filter name=ci-xml-transformer-mcp
+podman ps --filter name=ci-transport-mapper-mcp-http
 
 # Test HTTP endpoint
 curl http://localhost:3100
 
 # View container logs
-podman logs ci-xml-transformer-mcp
+podman logs ci-transport-mapper-mcp-http
 ```
 
 ### Deployment Script Features
@@ -78,13 +78,13 @@ The `deploy.ps1` script provides:
 ### Container Configuration
 
 #### Image Details
-- **Name**: `ci-xml-transformer-mcp:latest`
+- **Name**: `ci-transport-mapper-mcp-http:latest`
 - **Base Image**: `node:20-alpine`
 - **Size**: ~200MB (optimized Alpine Linux)
 - **Security**: Runs as non-root user
 
 #### Container Details
-- **Name**: `ci-xml-transformer-mcp`
+- **Name**: `ci-transport-mapper-mcp-http`
 - **Port Mapping**: `{HOST_PORT}:3100`
 - **Restart Policy**: `unless-stopped`
 - **Health Check**: HTTP GET to `/` every 30 seconds
@@ -109,40 +109,40 @@ project=xml-transformer-mcp # Project identifier
 #### View Logs
 ```powershell
 # Real-time logs
-podman logs -f ci-xml-transformer-mcp
+podman logs -f ci-transport-mapper-mcp-http
 
 # Recent logs with timestamps
-podman logs -t --tail 50 ci-xml-transformer-mcp
+podman logs -t --tail 50 ci-transport-mapper-mcp-http
 ```
 
 #### Container Control
 ```powershell
 # Stop container
-podman stop ci-xml-transformer-mcp
+podman stop ci-transport-mapper-mcp-http
 
 # Start container
-podman start ci-xml-transformer-mcp
+podman start ci-transport-mapper-mcp-http
 
 # Restart container
-podman restart ci-xml-transformer-mcp
+podman restart ci-transport-mapper-mcp-http
 
 # Remove container
-podman rm ci-xml-transformer-mcp
+podman rm ci-transport-mapper-mcp-http
 ```
 
 #### Status and Monitoring
 ```powershell
 # Container status
-podman ps --filter name=ci-xml-transformer-mcp
+podman ps --filter name=ci-transport-mapper-mcp-http
 
 # Detailed container info
-podman inspect ci-xml-transformer-mcp
+podman inspect ci-transport-mapper-mcp-http
 
 # Resource usage
-podman stats ci-xml-transformer-mcp
+podman stats ci-transport-mapper-mcp-http
 
 # Health status
-podman inspect ci-xml-transformer-mcp --format "{{.State.Health.Status}}"
+podman inspect ci-transport-mapper-mcp-http --format "{{.State.Health.Status}}"
 ```
 
 ### Image Management
@@ -153,7 +153,7 @@ podman inspect ci-xml-transformer-mcp --format "{{.State.Health.Status}}"
 .\deploy.ps1
 
 # Build only (no deployment)
-podman build -t ci-xml-transformer-mcp:latest .
+podman build -t ci-transport-mapper-mcp-http:latest .
 
 # List images
 podman images
@@ -173,7 +173,7 @@ podman ps -a --filter "label=project=xml-transformer-mcp" --format "{{.Names}}" 
 #### Export Container Image
 ```powershell
 # Export image
-podman save ci-xml-transformer-mcp:latest -o xml-transformer-backup.tar
+podman save ci-transport-mapper-mcp-http:latest -o xml-transformer-backup.tar
 
 # Import on another system
 podman load -i xml-transformer-backup.tar
@@ -203,15 +203,15 @@ docker-compose up -d --build
 
 ```bash
 # Build image
-docker build -t ci-xml-transformer-mcp:latest .
+docker build -t ci-transport-mapper-mcp-http:latest .
 
 # Run container
-docker run -d --name ci-xml-transformer-mcp -p 3100:3100 ci-xml-transformer-mcp:latest
+docker run -d --name ci-transport-mapper-mcp-http -p 3100:3100 ci-transport-mapper-mcp-http:latest
 
 # Container management (same as Podman, replace 'podman' with 'docker')
-docker logs ci-xml-transformer-mcp
-docker stop ci-xml-transformer-mcp
-docker start ci-xml-transformer-mcp
+docker logs ci-transport-mapper-mcp-http
+docker stop ci-transport-mapper-mcp-http
+docker start ci-transport-mapper-mcp-http
 ```
 
 ## 🌍 Multi-Environment Deployment
@@ -247,7 +247,7 @@ The container includes built-in health monitoring:
 ### Health Status
 ```powershell
 # Check health status
-podman inspect ci-xml-transformer-mcp --format "{{.State.Health.Status}}"
+podman inspect ci-transport-mapper-mcp-http --format "{{.State.Health.Status}}"
 
 # Possible values: starting, healthy, unhealthy
 ```
@@ -263,10 +263,10 @@ podman inspect ci-xml-transformer-mcp --format "{{.State.Health.Status}}"
 #### 2. Container Won't Start
 ```powershell
 # Check logs for errors
-podman logs ci-xml-transformer-mcp
+podman logs ci-transport-mapper-mcp-http
 
 # Inspect container configuration
-podman inspect ci-xml-transformer-mcp
+podman inspect ci-transport-mapper-mcp-http
 ```
 
 #### 3. Health Check Failing
@@ -275,13 +275,13 @@ podman inspect ci-xml-transformer-mcp
 curl http://localhost:3100
 
 # Check container internal logs
-podman exec ci-xml-transformer-mcp ps aux
+podman exec ci-transport-mapper-mcp-http ps aux
 ```
 
 #### 4. Build Failures
 ```powershell
 # Check Dockerfile and dependencies
-podman build -t ci-xml-transformer-mcp:latest . --no-cache
+podman build -t ci-transport-mapper-mcp-http:latest . --no-cache
 ```
 
 ### Performance Monitoring
@@ -289,10 +289,10 @@ podman build -t ci-xml-transformer-mcp:latest . --no-cache
 #### Resource Usage
 ```powershell
 # Real-time stats
-podman stats ci-xml-transformer-mcp
+podman stats ci-transport-mapper-mcp-http
 
 # Memory and CPU limits (if needed)
-podman run -d --name ci-xml-transformer-mcp --memory=512m --cpus=1.0 -p 3100:3100 ci-xml-transformer-mcp:latest
+podman run -d --name ci-transport-mapper-mcp-http --memory=512m --cpus=1.0 -p 3100:3100 ci-transport-mapper-mcp-http:latest
 ```
 
 ## 🔐 Security Considerations
@@ -322,7 +322,7 @@ podman run -d --name ci-xml-transformer-mcp --memory=512m --cpus=1.0 -p 3100:310
 ```powershell
 # Production deployment with resource limits
 podman run -d \
-  --name ci-xml-transformer-mcp-prod \
+  --name ci-transport-mapper-mcp-http \
   -p 3100:3100 \
   --memory=1g \
   --cpus=2 \
@@ -336,7 +336,7 @@ podman run -d \
   -e PORT=3100 \
   --label environment=production \
   --label project=xml-transformer-mcp \
-  ci-xml-transformer-mcp:latest
+  ci-transport-mapper-mcp-http:latest
 ```
 
 ### Load Balancing and Scaling
@@ -362,10 +362,10 @@ For high-availability deployments:
 
 If you encounter issues:
 
-1. **Check Logs**: `podman logs ci-xml-transformer-mcp`
-2. **Verify Configuration**: `podman inspect ci-xml-transformer-mcp`
+1. **Check Logs**: `podman logs ci-transport-mapper-mcp-http`
+2. **Verify Configuration**: `podman inspect ci-transport-mapper-mcp-http`
 3. **Test Connectivity**: `curl http://localhost:3100`
-4. **Check Resources**: `podman stats ci-xml-transformer-mcp`
+4. **Check Resources**: `podman stats ci-transport-mapper-mcp-http`
 5. **Review Documentation**: Check this guide and related docs
 
 For additional support, review the project's GitHub repository and documentation.

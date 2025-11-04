@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: carrier_transform_xml_mcp
+    container_name: ci-transport-mapper-mcp-http
     ports:
       - "3100:3100"
     environment:

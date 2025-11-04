@@ -72,8 +72,8 @@ Deploy the XML Transformer MCP Server as a container using Podman with the provi
 ```
 
 #### Container Details
-- **Image Name**: `ci-xml-transformer-mcp:latest`
-- **Container Name**: `ci-xml-transformer-mcp`
+- **Image Name**: `ci-transport-mapper-mcp-http:latest`
+- **Container Name**: `ci-transport-mapper-mcp-http`
 - **Default Port**: 3100
 - **Health Checks**: Automatic monitoring every 30s
 - **Auto-restart**: Unless manually stopped
@@ -81,19 +81,19 @@ Deploy the XML Transformer MCP Server as a container using Podman with the provi
 #### Container Management
 ```powershell
 # View real-time logs
-podman logs -f ci-xml-transformer-mcp
+podman logs -f ci-transport-mapper-mcp-http
 
 # Stop the container
-podman stop ci-xml-transformer-mcp
+podman stop ci-transport-mapper-mcp-http
 
 # Restart the container
-podman restart ci-xml-transformer-mcp
+podman restart ci-transport-mapper-mcp-http
 
 # Check container status
-podman ps --filter name=ci-xml-transformer-mcp
+podman ps --filter name=ci-transport-mapper-mcp-http
 
 # Remove container (if needed)
-podman rm ci-xml-transformer-mcp
+podman rm ci-transport-mapper-mcp-http
 ```
 
 #### Container Features

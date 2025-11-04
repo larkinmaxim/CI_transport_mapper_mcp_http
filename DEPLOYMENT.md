@@ -14,15 +14,15 @@
 
 ```powershell
 # Status
-podman ps --filter name=ci-xml-transformer-mcp
+podman ps --filter name=ci-transport-mapper-mcp-http
 
 # Logs
-podman logs -f ci-xml-transformer-mcp
+podman logs -f ci-transport-mapper-mcp-http
 
 # Stop/Start/Restart
-podman stop ci-xml-transformer-mcp
-podman start ci-xml-transformer-mcp
-podman restart ci-xml-transformer-mcp
+podman stop ci-transport-mapper-mcp-http
+podman start ci-transport-mapper-mcp-http
+podman restart ci-transport-mapper-mcp-http
 ```
 
 ## 🌐 Access
@@ -35,13 +35,13 @@ podman restart ci-xml-transformer-mcp
 
 ```powershell
 # Check health
-podman inspect ci-xml-transformer-mcp --format "{{.State.Health.Status}}"
+podman inspect ci-transport-mapper-mcp-http --format "{{.State.Health.Status}}"
 
 # Container details
-podman inspect ci-xml-transformer-mcp
+podman inspect ci-transport-mapper-mcp-http
 
 # Resource usage
-podman stats ci-xml-transformer-mcp
+podman stats ci-transport-mapper-mcp-http
 ```
 
 ## 📚 Full Documentation

@@ -5,8 +5,8 @@ param(
     [string]$Environment = "production"
 )
 
-$ImageName = "ci-xml-transformer-mcp"
-$ContainerName = "ci-xml-transformer-mcp"
+$ImageName = "ci-transport-mapper-mcp-http"
+$ContainerName = "ci-transport-mapper-mcp-http"
 $ImageTag = "${ImageName}:latest"
 
 Write-Host "XML Transformer MCP Server - Podman Deploy" -ForegroundColor Blue
@@ -73,6 +73,41 @@ if ($status) {
     Write-Host ""
     Write-Host "SUCCESS: XML Transformer MCP Server is running!" -ForegroundColor Green
     Write-Host "URL: http://localhost:$Port" -ForegroundColor Cyan
+    Write-Host ""
+    
+    # Update MCP catalog metadata if available
+    $metadataPath = "C:\mcp-repos\metadata"
+    if (Test-Path $metadataPath) {
+        Write-Host "Update MCP catalog metadata" -ForegroundColor Cyan
+        
+        # Find JSON file for this container
+        $jsonFiles = Get-ChildItem -Path $metadataPath -Filter "*.json" -File
+        $targetFile = $null
+        
+        foreach ($file in $jsonFiles) {
+            $content = Get-Content $file.FullName -Raw | ConvertFrom-Json
+            if ($content.name -eq $ContainerName -or $content.containerName -eq $ContainerName) {
+                $targetFile = $file
+                break
+            }
+        }
+        
+        if ($targetFile) {
+            try {
+                $metadata = Get-Content $targetFile.FullName -Raw | ConvertFrom-Json
+                $metadata.status = "installed"
+                $metadata | Add-Member -NotePropertyName "localhostURL" -NotePropertyValue "http://localhost:$Port/" -Force
+                $metadata | ConvertTo-Json -Depth 10 | Set-Content $targetFile.FullName
+                Write-Host "Metadata updated: $($targetFile.Name)" -ForegroundColor Green
+            }
+            catch {
+                Write-Host "Warning: Could not update metadata file" -ForegroundColor Yellow
+            }
+        } else {
+            Write-Host "No metadata file found for $ContainerName" -ForegroundColor Yellow
+        }
+    }
+    
     Write-Host ""
     Write-Host "Management Commands:" -ForegroundColor Yellow
     Write-Host "  View logs: podman logs -f $ContainerName"
