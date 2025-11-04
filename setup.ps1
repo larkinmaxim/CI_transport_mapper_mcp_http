@@ -27,6 +27,7 @@ try {
 catch {
     Write-Host "ERROR: Podman not installed or not in PATH" -ForegroundColor Red
     Write-Host "Install from: https://podman.io/getting-started/installation"
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
@@ -43,19 +44,21 @@ if ($existing -eq $ContainerName) {
 
 # Build image
 Write-Host "Building container image..." -ForegroundColor Cyan
-podman build -t $ImageTag -f Dockerfile . | Out-Null
+podman build -t $ImageTag -f Dockerfile .
 if ($LASTEXITCODE -ne 0) {
     Write-Host "ERROR: Failed to build image" -ForegroundColor Red
+    Read-Host "Press Enter to exit"
     exit 1
 }
 Write-Host "Image built successfully: $ImageTag" -ForegroundColor Green
 
 # Deploy container
 Write-Host "Deploying container..." -ForegroundColor Cyan
-podman run -d --name $ContainerName -p "${Port}:3100" -e "NODE_ENV=$Environment" -e "MCP_TRANSPORT=http" -e "PORT=3100" --restart unless-stopped --label "environment=$Environment" --label "project=xml-transformer-mcp" $ImageTag | Out-Null
+$containerId = podman run -d --name $ContainerName -p "${Port}:3100" -e "NODE_ENV=$Environment" -e "MCP_TRANSPORT=http" -e "PORT=3100" --restart unless-stopped --label "environment=$Environment" --label "project=xml-transformer-mcp" $ImageTag
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host "ERROR: Failed to deploy container" -ForegroundColor Red
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
@@ -113,8 +116,12 @@ if ($status) {
     Write-Host "  View logs: podman logs -f $ContainerName"
     Write-Host "  Stop:      podman stop $ContainerName"
     Write-Host "  Restart:   podman restart $ContainerName"
+    Write-Host ""
+    Read-Host "Press Enter to exit"
 } else {
     Write-Host "ERROR: Container may not be running" -ForegroundColor Red
     Write-Host "Check logs: podman logs $ContainerName"
+    Write-Host ""
+    Read-Host "Press Enter to exit"
     exit 1
 }
