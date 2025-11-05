@@ -1,0 +1,7 @@
+211ff2e 2025-11-04 15:52:06 Fix metadata file detection - add support for mcpId property
+ef33821 2025-11-04 15:43:12 Fix setup.ps1 script closing immediately - show output and add pause prompts
+e088eb3 2025-11-04 15:16:57 Add MCP catalog metadata update functionality to setup script
+964f390 2025-10-22 17:47:08 Add Podman container deployment with comprehensive documentation
+d0599df 2025-10-19 20:03:18 Add Podman/Docker containerization support
+272aba4 2025-10-19 19:52:38 Change default HTTP port from 3300 to 3100
+4867b57 2025-10-19 19:46:41 Initial commit: EPM Knowledge Network - XML Transport Mapper with MCP HTTP Server
